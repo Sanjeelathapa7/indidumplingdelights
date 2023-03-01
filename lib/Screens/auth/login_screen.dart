@@ -66,9 +66,9 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 children: [
                   Image.asset(
-                    "assets/images/charlesdeluvio-wr8Ze_O-sjI-unsplash.jpg",
-                    height: 100,
-                    width: 100,
+                    "assets/images/logo.png",
+                    height: 150,
+                    width: 200,
                   ),
                   SizedBox(
                     height: 10,
@@ -88,7 +88,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         size: 22.0,
                       ),
                       hintText: 'Email Address',
-                      hintStyle: TextStyle( fontSize: 17.0),
+                      hintStyle: TextStyle( fontSize: 17.0,
+                      fontFamily: "Times New Roman"
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -108,7 +110,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         color: Colors.black,
                       ),
                       hintText: 'Password',
-                      hintStyle: const TextStyle(fontFamily: 'WorkSansSemiBold', fontSize: 17.0),
+                      hintStyle: const TextStyle(fontFamily:"Times New Roman", fontSize: 17.0),
                       suffixIcon: GestureDetector(
                         onTap: () {
                           setState(() {
@@ -134,7 +136,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         child: Text(
                           "Forgot password?",
-                          style: TextStyle(color: Colors.grey.shade800),
+                          style: TextStyle(color: Colors.grey.shade800,fontFamily: "Times New Roman"),
                         ),
                       )),
                   SizedBox(
@@ -144,8 +146,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     width: double.infinity,
                     child: ElevatedButton(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(Colors.pink.shade100),
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: BorderSide(color: Colors.pink.shade200))),
+                          backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 103, 146, 211)),
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: BorderSide(color: Colors.blue.shade200))),
                           padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: 20)),
 
                         ),
@@ -154,7 +156,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         child: Text(
                           "Log In",
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20,fontFamily: "Times New Roman"),
                         )),
                   ),
                   SizedBox(
@@ -165,7 +167,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       Text(
                         "Are you new? Create an account ",
-                        style: TextStyle(color: Colors.grey.shade800),
+                        style: TextStyle(color: Colors.grey.shade800,fontFamily: "Times New Roman"),
                       ),
                       InkWell(
                           onTap: () {
@@ -173,7 +175,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           },
                           child: Text(
                             "Sign up",
-                            style: TextStyle(color: Colors.pink),
+                            style: TextStyle(color: Color.fromARGB(255, 126, 119, 224),fontFamily: "Times New Roman"),
                           ))
                     ],
                   ),

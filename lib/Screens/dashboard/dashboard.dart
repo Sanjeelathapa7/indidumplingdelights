@@ -80,8 +80,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
       ),
       bottomNavigationBar: CurvedNavigationBar(
         height: 60,
-        backgroundColor: Colors.pink,
-        color: Color.fromARGB(255, 249, 237, 246),
+        backgroundColor: Color.fromARGB(255, 231, 230, 237),
+        color: Color.fromARGB(255, 204, 227, 244),
         onTap: _itemTapped,
         //IconButtons
         items: <Widget>[

@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
 
                             Image.asset(
-                              "assets/images/banner.jpg",
+                              "assets/images/bann.jpg",
                               height: 200,
                               width: double.infinity,
                               fit: BoxFit.fill,
@@ -88,8 +88,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             Container(
                                 margin: EdgeInsets.symmetric(horizontal: 10),
                                 child: Text(
-                                  "Products",
-                                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                                  "Product",
+                                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,fontFamily: "Times New Roman"),
                                 )),
                             Container(
                               margin: EdgeInsets.symmetric(horizontal: 10),
@@ -128,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
               border: Border.all(
                 color: Colors.black26,
               ),
-              color: Colors.white,
+              color: Color.fromARGB(255, 197, 203, 237),
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.5),
@@ -142,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Row(
               children: [
                 Expanded(child: Container()),
-                Expanded(child: Image.asset("assets/images/logo.png", height: 50, width: 50,)),
+                Expanded(child: Image.asset("assets/images/logo.png", height: 80, width: 60,)),
                 Expanded(
                     child: Align(
                         alignment: Alignment.centerRight,
@@ -162,7 +162,7 @@ class _HomeScreenState extends State<HomeScreen> {
             margin: EdgeInsets.symmetric(horizontal: 10),
             child: Text(
               "Welcome,",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,fontFamily: "Times New Roman"),
             )),
         Container(
             margin: EdgeInsets.symmetric(horizontal: 10),
@@ -235,7 +235,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     fit: BoxFit.cover,
                     errorBuilder: (BuildContext context, Object exception, StackTrace? stackTrace) {
                       return Image.asset(
-                        'assets/images/logo.png',
+                        'assets/images/pork.png',
                         height: 300,
                         width: double.infinity,
                         fit: BoxFit.cover,

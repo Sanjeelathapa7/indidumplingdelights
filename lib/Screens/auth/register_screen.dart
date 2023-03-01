@@ -81,8 +81,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 children: [
                   Image.asset(
                     "assets/images/logo.png",
-                    height: 100,
-                    width: 100,
+                    height: 160,
+                    width: 200,
                   ),
                   SizedBox(height: 10,),
                   TextFormField(
@@ -92,7 +92,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     style: const TextStyle(
 
                         fontSize: 16.0,
-                        color: Colors.pink),
+                        color: Color.fromARGB(255, 114, 112, 212)),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
 
@@ -109,7 +109,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                       hintText: 'Full Name',
                       hintStyle:
-                      TextStyle( fontSize: 17.0),
+                      TextStyle( fontSize: 17.0, fontFamily: "Times New Roman"),
                     ),
                   ),
                   SizedBox(height: 10,),
@@ -119,7 +119,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     keyboardType: TextInputType.phone,
                     style: const TextStyle(
                         fontSize: 16.0,
-                        color: Colors.pink),
+                        color: Color.fromARGB(255, 114, 112, 212)),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
 
@@ -136,7 +136,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                       hintText: 'Number',
                       hintStyle:
-                      TextStyle(fontFamily: 'WorkSansSemiBold', fontSize: 17.0),
+                      TextStyle(fontFamily: "Times New Roman", fontSize: 17.0),
                     ),
                   ),
                   SizedBox(height: 10,),
@@ -146,7 +146,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     keyboardType: TextInputType.text,
                     style: const TextStyle(
                         fontSize: 16.0,
-                        color: Colors.pink),
+                        color: Color.fromARGB(255, 114, 112, 212)),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
 
@@ -163,7 +163,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                       hintText: 'Username',
                       hintStyle:
-                      TextStyle(fontFamily: 'WorkSansSemiBold', fontSize: 17.0),
+                      TextStyle(fontFamily: "Times New Roman", fontSize: 17.0),
                     ),
                   ),
                   SizedBox(height: 10,),
@@ -174,7 +174,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     style: const TextStyle(
 
                         fontSize: 16.0,
-                        color: Colors.pink),
+                        color: Color.fromARGB(255, 114, 112, 212)),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
 
@@ -191,7 +191,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                       hintText: 'Email ',
                       hintStyle:
-                      TextStyle( fontSize: 17.0),
+                      TextStyle( fontSize: 17.0, fontFamily: "Times New Roman"),
                     ),
                   ),
                   SizedBox(height: 10,),
@@ -201,7 +201,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     validator: (String? value)=>ValidateSignup.password(value, _confirmPasswordController),
                     style: const TextStyle(
                         fontSize: 16.0,
-                        color: Colors.pink),
+                        color: Color.fromARGB(255, 114, 112, 212)),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20)
@@ -216,7 +216,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                       hintText: 'Password',
                       hintStyle: const TextStyle(
-                          fontSize: 17.0),
+                          fontSize: 17.0,fontFamily: "Times New Roman"),
                       suffixIcon: GestureDetector(
                         onTap: () {
                           setState(() {
@@ -241,7 +241,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     validator: (String? value)=>ValidateSignup.password(value, _passwordController),
                     style: const TextStyle(
                         fontSize: 16.0,
-                        color: Colors.pink),
+                        color: Color.fromARGB(255, 114, 112, 212)),
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20)
@@ -256,7 +256,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                       hintText: 'Confirm Password',
                       hintStyle: const TextStyle(
-                          fontFamily: 'WorkSansSemiBold', fontSize: 17.0),
+                          fontFamily: "Times New Roman", fontSize: 17.0),
                       suffixIcon: GestureDetector(
                         onTap: () {
                           setState(() {
@@ -278,11 +278,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     width: double.infinity,
                     child: ElevatedButton(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(Colors.pink.shade100),
+                          backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 150, 133, 219)),
                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                               RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20),
-                                  side: BorderSide(color: Colors.pink.shade200)
+                                  side: BorderSide(color: Color.fromARGB(255, 141, 139, 222))
                               )
                           ),
                           padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: 20)),
@@ -290,7 +290,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         onPressed: (){
                           register();
                         }, child: Text("Sign Up", style: TextStyle(
-                        fontSize: 20
+                        fontSize: 20,fontFamily: "Times New Roman"
                     ),)),
                   ),
                   SizedBox(height: 20,),
@@ -298,13 +298,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Already have an account? ", style: TextStyle(
-                          color: Colors.grey.shade800
+                          color: Colors.grey.shade800,fontFamily: "Times New Roman"
                       ),),
                       InkWell(
                           onTap: (){
                             Navigator.of(context).pop();
                           },
-                          child: Text("Sign in", style: TextStyle(color: Colors.pink),))
+                          child: Text("Sign in", style: TextStyle(color: Color.fromARGB(255, 114, 112, 212),fontFamily: "Times New Roman"),))
                     ],
                   ),
 

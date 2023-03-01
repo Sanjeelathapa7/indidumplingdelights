@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
       child: GlobalLoaderOverlay(
         useDefaultLoading: false,
         overlayWidget: Center(
-          child: Image.asset("assets/images/logo.png", height: 100, width: 100,),
+          child: Image.asset("assets/images/logo.png", height: 150, width: 200,),
         ),
         child: Consumer<GlobalUIViewModel>(
             builder: (context, loader, child) {
@@ -72,11 +72,11 @@ class MyApp extends StatelessWidget {
                   // or simply save your changes to "hot reload" in a Flutter IDE).
                   // Notice that the counter didn't reset back to zero; the application
                   // is not restarted.
-                  primarySwatch: Colors.pink,
+                  primarySwatch: Colors.blueGrey,
                   // textTheme: GoogleFonts.poppinsTextTheme(),
 
                 ),
-                initialRoute: "/register",
+                initialRoute: "/login",
                 routes: {
                   "/login": (BuildContext context)=>LoginScreen(),
                   // "/splash": (BuildContext context)=>SplashScreen(),
